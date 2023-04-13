@@ -1,0 +1,55 @@
+header {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    color: darkblue;
+    margin: 10px;
+    padding: 5px;
+    display: inline-block;
+}
+
+nav {
+    display: inline-block;
+    margin: 10px;
+    text-align: right;
+}
+
+nav li {
+    display: inline-block;
+    padding: 5px;
+}
+
+nav a {
+    text-decoration: none;
+    font: bold;
+    color: darkblue;
+}
+
+img {
+    width: 50vw;
+    left: 100%;
+    top: 100px;
+    transform: translateX(-100%);
+    position: absolute;
+    z-index: 1;
+}
+
+p {
+    position: relative;
+    top: 25vw;
+    font-size: 5vw;
+    z-index: 0;
+}
+
+p::after {
+    content: "";
+    position: absolute;
+    background-color: darkblue;
+    top: 5vw;
+    left: 0px;
+    width: 80vw;
+    height: 20vw;
+}
